@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": "djjshd",
+      "email": "jdfkssdj@yandex.ru",
+      "password": 123
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Sveta",
+      "phone": "32453647",
+      "completed": false,
+      "id": "3P_Hk7N"
+    },
+    {
+      "name": "Maria",
+      "phone": "sdfghj",
+      "completed": false,
+      "id": "kdgUCsf"
+    },
+    {
+      "name": "Tom",
+      "phone": "ewrtyr",
+      "completed": false,
+      "id": "qQygJKk"
+    },
+    {
+      "name": "Ben",
+      "phone": "dghfnhgj",
+      "completed": false,
+      "id": "pZueLpe"
+    }
+  ]
+}
