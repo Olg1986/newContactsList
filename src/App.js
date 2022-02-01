@@ -1,20 +1,18 @@
-import React, { useState} from 'react';
+import React from 'react';
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
-import {HomePage} from './pages/HomePage';
-import {LoginPage} from './pages/LoginPage';
+import {HomePage} from './pages/home/HomePage';
+import {LoginPage} from './pages/loginPage/LoginPage';
 import { RequireAuth } from './hoc/RequireAuth';
 import {AuthProvider} from './hoc/AuthProvider';
-
 
 import './App.css';
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
-
+  
   return (
     <BrowserRouter>
     <AuthProvider>

@@ -1,35 +1,24 @@
 {
-  "users": [
-    {
-      "id": "djjshd",
-      "email": "jdfkssdj@yandex.ru",
-      "password": 123
-    }
-  ],
   "contacts": [
     {
-      "name": "Sveta",
-      "phone": "32453647",
-      "completed": false,
-      "id": "3P_Hk7N"
+      "name": "Света",
+      "phone": "83239",
+      "id": "HzbHoQb"
     },
     {
-      "name": "Maria",
-      "phone": "sdfghj",
-      "completed": false,
-      "id": "kdgUCsf"
+      "name": "Мария",
+      "phone": "324356",
+      "id": "LldQn9H"
     },
     {
-      "name": "Tom",
-      "phone": "ewrtyr",
-      "completed": false,
-      "id": "qQygJKk"
+      "name": "Мария",
+      "phone": "32456",
+      "id": "fo7L4_u"
     },
     {
-      "name": "Ben",
-      "phone": "dghfnhgj",
-      "completed": false,
-      "id": "pZueLpe"
+      "name": "Света",
+      "phone": "3565768",
+      "id": "480Yfwp"
     }
   ]
 }

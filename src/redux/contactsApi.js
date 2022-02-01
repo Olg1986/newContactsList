@@ -7,13 +7,7 @@ export const contactsApi = createApi({
     endpoints: (build) => ({
         getContacts: build.query({
             query: (name = '') => `contacts?${name && `name_like=${name}`}`,
-            providesTags: (result) =>
-            result
-            ? [
-                ...result.map(({ id }) => ({ type: 'Contacts', id })),
-                { type: 'Contacts', id: 'LIST' },
-                ]
-            : [{ type: 'Contacts', id: 'LIST' }],
+            providesTags: (result) => ['Contacts'],
         }),
         addContact: build.mutation({
             query: (body) => ({
@@ -21,14 +15,14 @@ export const contactsApi = createApi({
                 method: 'POST',
                 body
             }),
-            invalidatesTags: ({type: 'Contacts', id: 'LIST'})
+            invalidatesTags: ['Contacts']
         }),
         deleteContact: build.mutation({
             query: (id) => ({
                 url: `contacts/${id}`,
                 method: 'DELETE',
             }),
-            invalidatesTags: [{type: 'Contacts', id: 'LIST'}]
+            invalidatesTags: ['Contacts']
         }),
         toggleContact: build.mutation({
             query: (contact) => ({
@@ -36,7 +30,7 @@ export const contactsApi = createApi({
                 method: 'PUT',
                 body: contact
             }),
-            invalidatesTags: [{type: 'Contacts', id: 'LIST'}]
+            invalidatesTags: ['Contacts']
         })
     })
 
