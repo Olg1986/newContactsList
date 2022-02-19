@@ -12,7 +12,6 @@
     align-items: center;
     width: 50%;
     background-color: #fff;
-    height: 100%;
 }
 .right {
     display: flex;
@@ -20,5 +19,16 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
+}
+@media(max-width: 800px) {
+    .home {
+        flex-wrap: wrap;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+
 }
